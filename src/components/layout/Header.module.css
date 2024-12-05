@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.headerContainer,
+.mobileHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logoSection,
+.mobileLogoSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 151px;
+  height: auto;
+}
+
+.desktopNavigation {
+  display: block;
+}
+
+.menuList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menuLink:hover {
+  color: #6600cc; /* Cor roxa da Vivo */
+}
+
+/* Mobile Styles */
+.mobileHeader {
+  display: none;
+}
+
+.mobileMenuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMenuToggle svg {
+  fill: #6600cc;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 910px) {
+  .desktopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: block;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileMenuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobileMenuLink {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid #eee;
+  }
+}
