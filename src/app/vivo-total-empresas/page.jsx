@@ -29,7 +29,13 @@ const VivoTotalEmpresas = () => {
     },
   ];
   return (
-    <>
+    <div className={styles.wrap}>
+      <div className={styles.pageHeader}>
+        <h1>Vivo Total Empresas</h1>
+        <h3>
+          Combos para utilizar o melhor da internet e telefonia Vivo Empresas
+        </h3>
+      </div>
       <div className={styles.container} key="container">
         {offersList.map((item, index) => (
           <Container
@@ -64,7 +70,7 @@ const VivoTotalEmpresas = () => {
           </p>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

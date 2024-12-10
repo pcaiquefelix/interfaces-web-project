@@ -111,6 +111,13 @@ export default function InternetPlans() {
 
   return (
     <div className={styles.wrap}>
+      <div className={styles.pageHeader}>
+        <h1>Internet Vivo Fibra</h1>
+        <h3>
+          Planos com internet 100% fibra ótica e telefone fixo ilimitado para
+          todo o Brasil
+        </h3>
+      </div>
       <div className={styles.plansWrapper}>
         {plans.map((plan, index) => (
           <InternetPlanCard
