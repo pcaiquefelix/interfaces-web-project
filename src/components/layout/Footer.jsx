@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -18,10 +22,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
       <div className={styles.footerContainer2}>
         <div className={styles.imageContainer}>
           <img
-            src="/images/footer-vivo.png"
+            src="/assets/img/footer-vivo-pra-tudo-808x480-1.png"
             alt="Vivo Footer"
             className={styles.footerImage}
           />
@@ -30,61 +35,71 @@ const Footer = () => {
         <div className={styles.buttonsContainer}>
           <a
             href="https://vivoparaseunegocio.com.br/vivo-fibra-empresas/"
-            className={styles.button}
+            className={styles["footer-link"]}
           >
             Banda Larga
           </a>
           <a
             href="https://vivoparaseunegocio.com.br/vivo-total-empresas/"
-            className={styles.button}
+            className={styles["footer-link"]}
           >
             Combos
           </a>
           <a
             href="https://vivoparaseunegocio.com.br/vivo-movel-empresas/"
-            className={styles.button}
+            className={styles["footer-link"]}
           >
             Planos Móveis
           </a>
-        </div>
-
-        <div className={styles.socialContainer}>
-          <a
-            href="https://wa.me/5579999073364"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img src="/icons/whatsapp.svg" alt="WhatsApp" />
-          </a>
-          <a
-            href="https://www.instagram.com/multtlink_vivoempresas/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img src="/icons/instagram.svg" alt="Instagram" />
-          </a>
-          <a
-            href="https://www.facebook.com/autorizada.multtlink?locale=pt_BR"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialIcon}
-          >
-            <img src="/icons/facebook.svg" alt="Facebook" />
-          </a>
+          <div className={styles.socialContainer}>
+            <a
+              href="https://wa.me/5579999073364"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className={styles.socialIcon}
+                icon={faWhatsapp}
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/multtlink_vivoempresas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className={styles.socialIcon}
+                icon={faInstagram}
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/autorizada.multtlink?locale=pt_BR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className={styles.socialIcon}
+                icon={faFacebook}
+              />
+            </a>
+          </div>
         </div>
       </div>
+
       <div className={styles.footerContainer3}>
         <div className={styles.logoContainer}>
-          <img src="/images/logo1.png" alt="Logo 1" className={styles.logo} />
           <img
-            src="/images/logo-parceiro.webp"
+            src="/assets/img/4965ffb0_1.png"
+            alt="Logo 1"
+            className={styles.logo}
+          />
+          <img
+            src="/assets/img/Logotipo-Vivo-Empresas-Parceiro-Autorizado-1.webp"
             alt="Parceiro Autorizado"
             className={styles.logo}
           />
           <img
-            src="/images/logo-5g.webp"
+            src="/assets/img/logo-5g-176x44-1.webp"
             alt="5G Logo"
             className={styles.logo}
           />

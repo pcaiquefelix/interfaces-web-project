@@ -1,0 +1,149 @@
+.carrossel {
+    position: relative;
+    width: 100%; /* Largura máxima do carrossel */
+    margin-top: 30px;
+    overflow: hidden; /* Oculta partes que saem do container */
+    border: 2px solid #ddd; /* Borda do carrossel */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carrossel input {
+    display: none; /* Oculta os botões de radio */
+    width: 100%;
+}
+
+.carrossel_wrapper {
+    display: flex; /* Flexbox para alinhar os slides horizontalmente */
+    transition: transform 0.5s ease; /* Transição suave para o movimento */
+}
+
+.carrossel_slide {
+    min-width: 100%; /* Cada slide ocupa 100% do container */
+}
+
+.carrossel_slide img {
+    width: 100%; /* A imagem ocupa 100% do slide */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+}
+
+.carrossel_navegacao {
+    position: absolute;
+    bottom: 10px; /* Posição na parte inferior do carrossel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Flexbox para alinhar os botões */
+}
+
+.carrossel_botao {
+    width: 15px; /* Largura dos botões */
+    height: 15px; /* Altura dos botões */
+    background-color: #bbb; /* Cor de fundo dos botões */
+    border-radius: 50%; /* Botões arredondados */
+    margin: 0 5px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+}
+
+.carrossel_botao:hover {
+    background-color: #888; /* Cor ao passar o mouse sobre os botões */
+}
+
+/* Transições para o carrossel */
+#slide1:checked ~ .carrossel_wrapper {
+    transform: translateX(0); /* Slide 1 é o padrão */
+}
+
+#slide2:checked ~ .carrossel_wrapper {
+    transform: translateX(-100%); /* Move para o slide 2 */
+}
+
+#slide3:checked ~ .carrossel_wrapper {
+    transform: translateX(-200%); /* Move para o slide 3 */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.item {
+    --display: flex;
+    --background-transition: 0.3s;
+    /* border-style: solid;
+    --border-style: solid; */
+    border: solid 1px #000;
+    border-width: 1px 1px 1px 1px;
+    --border-top-width: 1px;
+    --border-right-width: 1px;
+    --border-bottom-width: 1px;
+    --border-left-width: 1px;
+    --border-radius: 5px 5px 5px 5px;
+    --margin-top: 10px;
+    --margin-bottom: 10px;
+    --margin-left: 10px;
+    --margin-right: 10px;
+    padding: 50px 30px;
+}
+
+.h4 {
+    margin: 20px 0;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.second-hr {
+    margin: 3rem 0;
+    width: 10rem;
+}
+
+.containerWrap {
+    padding: 20px;
+}
+
+.p {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #af1c58;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #db6494;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact_info {
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Espaçamento em torno do elemento */
+    background-color: #660099;
+    padding: 30px;
+}
+
+.h3 {
+    color: #fff;
+}

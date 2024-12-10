@@ -19,7 +19,7 @@ const MainContent = ({ children }) => {
   return (
     <main className={styles.main}>
       <ImageCarousel images={bannerImages} />
-      <div className="container">{children}</div>
+      <div>{children}</div>
     </main>
   );
 };

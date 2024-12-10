@@ -1,0 +1,138 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plansWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 87.5%;
+}
+
+.planContainer {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.planHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.planTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.planDescription {
+  text-align: left;
+  margin-bottom: 60px;
+  color: #660099;
+}
+
+.planPrice {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.contractButton {
+  background-color: #af1c58;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contractButton:hover {
+  background-color: #db6494;
+}
+
+.planDetails {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.detailItem p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    margin: 3rem 0;
+    width: 10rem;
+}
+
+.div_p {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.div_p .p {
+    margin: 20px 0;
+}
+
+.variable-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.variable-footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.variable-footer div p {
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 8rem;
+}
+
+@media (max-width: 768px) {
+  .plansWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planContainer {
+    max-width: 100%;
+  }
+}
